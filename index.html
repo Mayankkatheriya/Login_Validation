@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Validation</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./png-transparent-green-and-beige-login-control-button-button-game-icon-game-buttons-miscellaneous-frame-retro.png">
+  </head>
+  <body>
+    <div class="container">
+        <h4 id="tag">
+            Created by
+            <span
+              ><a
+                href="https://www.linkedin.com/in/mayank-gupta-752328173/"
+                target="blank"
+                >Mayank Gupta</a
+              ></span
+            >
+            ❤
+          </h4>
+      <div class="landing-view">
+        <h2>Welcome to Login Validation!</h2>
+        <button class="login_now">Login Now</button>
+      </div>
+      <form action="">
+        <div class="img-container">
+          <img
+            src="./png-transparent-green-and-beige-login-control-button-button-game-icon-game-buttons-miscellaneous-frame-retro.png"
+            alt="logo"
+          />
+        </div>
+        <div class="username-container">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Username" required/>
+        </div>
+        <div class="password-container">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password" required
+          />
+        </div>
+        <button type="submit" class = "login">Log In</button>
+        <div class="extra-features">
+          <div class="checkbox-container">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="" onclick="prevenNav(event)">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+    <script>
+        function prevenNav(event) {
+            event.preventDefault();
+        }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
